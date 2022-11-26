@@ -80,6 +80,6 @@ Main-Class: com.mycompany.mypkg.MainAppClass
 ```
 
 ```tip
-不需要为主类名增加扩展名`.class`，清单文件的最后一行必须以换行符结束，常见的错误就是只包含 Main-Class 行而没有行结束符的
+	不需要为主类名增加扩展名`.class`，清单文件的最后一行必须以换行符结束，常见的错误就是只包含 Main-Class 行而没有行结束符的
 ```
 
