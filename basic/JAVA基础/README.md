@@ -1,7 +1,7 @@
 ---
-sort: 1笔记
+sort: 1
 ---
 
-# 笔记
+# Java基础
 
 {% include list.liquid all=true %}
