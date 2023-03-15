@@ -20,7 +20,7 @@ sort: 3
 
 ​	IRule的实现就是各种不同的负载均衡策略，常见的策略见下表
 
-![image-20220722184909082](C:/Users/H/Desktop/Java/图片/image-20220722184909082.png)
+![image-20220722184909082](../../pic/middleware/image-20220722184909082.png)
 
 ​	通过注入一个IRule接口的实现类就可以修改当前的负载均衡规则，这种方式是全局的，第二种方式是在每个服务中的yml配置文件里配置userservice（这里是指服务名，不是固定的）.ribbon.NFLoadBalancerRuleClassName，修改一个服务对另一个服务的负载均衡规则
 

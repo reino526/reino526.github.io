@@ -253,19 +253,19 @@ public MessageConverter jsonMessageConverter(){
 
 确认机制发送消息时，需要给每个消息设置一个全局唯一id，以区分不同消息，避免ack冲突
 
-![image-20220728213436817](C:/Users/H/Desktop/Java/图片/image-20220728213436817.png)
+![image-20220728213436817](../../pic/middleware/image-20220728213436817.png)
 
-![image-20220728213746937](C:/Users/H/Desktop/Java/图片/image-20220728213746937.png)
+![image-20220728213746937](../../pic/middleware/image-20220728213746937.png)
 
-![image-20220728213956306](C:/Users/H/Desktop/Java/图片/image-20220728213956306.png)
+![image-20220728213956306](../../pic/middleware/image-20220728213956306.png)
 
 
 
 #### 消息持久化
 
-​		默认情况下SpringAMQP中的消息就是持久的，意思就是下面的操作在SpringAMQP是不需要做的![image-20220728214315953](C:/Users/H/Desktop/Java/图片/image-20220728214315953.png)
+​		默认情况下SpringAMQP中的消息就是持久的，意思就是下面的操作在SpringAMQP是不需要做的![image-20220728214315953](../../pic/middleware/image-20220728214315953.png)
 
-![image-20220728214626060](C:/Users/H/Desktop/Java/图片/image-20220728214626060.png)
+![image-20220728214626060](../../pic/middleware/image-20220728214626060.png)
 
 
 
@@ -318,7 +318,7 @@ spring:
 - ImmediateRequeueMessageRecoverer：重试耗尽后，返回nack，消息重新入队
 - RepublishMessageRecoverer：重试耗尽后，将失败消息投递到指定的交换机（相当于重发消息）
 
-![image-20220728220940183](C:/Users/H/Desktop/Java/图片/image-20220728220940183.png)
+![image-20220728220940183](../../pic/middleware/image-20220728220940183.png)
 
 
 
@@ -388,7 +388,7 @@ if (message.getMessageProperties().getReceiveDelay() > 0) {
 
 - 支持数百万条的消息存储
 
-![image-20220728225420887](C:/Users/H/Desktop/Java/图片/image-20220728225420887.png)
+![image-20220728225420887](../../pic/middleware/image-20220728225420887.png)
 
 
 

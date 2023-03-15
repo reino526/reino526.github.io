@@ -21,11 +21,11 @@ sort: 12
 
 ### RDB
 
-​	![image-20220727150058147](C:/Users/H/Desktop/Java/图片/image-20220727150058147.png)
+​	![image-20220727150058147](../../pic/middleware/image-20220727150058147.png)
 
-![image-20220727150253904](C:/Users/H/Desktop/Java/图片/image-20220727150253904.png)
+![image-20220727150253904](../../pic/middleware/image-20220727150253904.png)
 
-![image-20220727150745371](C:/Users/H/Desktop/Java/图片/image-20220727150745371.png)
+![image-20220727150745371](../../pic/middleware/image-20220727150745371.png)
 
 RDB的缺点：
 
@@ -38,11 +38,11 @@ RDB的缺点：
 
 ​	AOF全称为Append Only File(追加文件），Redis处理的每一个写命令都会记录在AOF文件，可以看做是命令日志文件
 
-![image-20220727151346684](C:/Users/H/Desktop/Java/图片/image-20220727151346684.png)
+![image-20220727151346684](../../pic/middleware/image-20220727151346684.png)
 
 ​	因为是记录命令，AOF文件会比RDB文件大的多。而且AOF会记录对同一个key的多次写操作，但只有最后一次写操作才有意义，通过执行bgrewriteaof命令，可以让AOF文件执行重写功能，用最少的命令达到相同效果
 
-![image-20220727151742187](C:/Users/H/Desktop/Java/图片/image-20220727151742187.png)
+![image-20220727151742187](../../pic/middleware/image-20220727151742187.png)
 
 
 
@@ -82,7 +82,7 @@ slaveof <masterip> <masterport>
 
 #### 全量同步
 
-![image-20220727153758715](C:/Users/H/Desktop/Java/图片/image-20220727153758715.png)
+![image-20220727153758715](../../pic/middleware/image-20220727153758715.png)
 
 ​	master判断slave是不是第一次来同步数据会用到两个很重要的概念:
 
@@ -103,7 +103,7 @@ slaveof <masterip> <masterport>
 
 #### 增量同步
 
-![image-20220727154832404](C:/Users/H/Desktop/Java/图片/image-20220727154832404.png)
+![image-20220727154832404](../../pic/middleware/image-20220727154832404.png)
 
 ​	
 
@@ -241,7 +241,7 @@ public LettuceClientConfigurationBuilderCustomizer configurationBuilderCustomize
 
 ​	分片集群不需要哨兵也能自动实现数据迁移，而且绝大部分情况都是人为的去切换（更换新的性能好的节点）
 
-![image-20220727224231031](C:/Users/H/Desktop/Java/图片/image-20220727224231031.png)
+![image-20220727224231031](../../pic/middleware/image-20220727224231031.png)
 
 
 
